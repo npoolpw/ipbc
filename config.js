@@ -1,8 +1,8 @@
-var api = "http://10.25.202.224:2000";
+var api = "http://ipbc.pool.ahka.net:8117";
 
-var poolHost = "10.25.202.224";
+var poolHost = "ipbc.pool.ahka.net";
 
-var blockExplorer = "http://blockexplorer.pw/africoin";
+var blockExplorer = "http://blockexplorer.pw/ipbc";
 
 var cryptonatorWidget = ["BTC-USD", "XMR-USD"];
 
@@ -15,6 +15,8 @@ var transactionExplorer = "http://blockexplorer.pw/{symbol}/?hash={id}#blockchai
 var themeCss = "themes/default-theme.css";
 
 var networkStat = [
-        ["mym.npool.pw", "http://mym.npool.pw:10070"],
-	["bitnotepool.ga/mymn", "http://35.156.246.254:9001"]
+        ["pool.ipbc.io", "https://pool.ipbc.io:8119"],
+        ["support.ipbc.io", "https://support.ipbc.io:8119"],
+        ["ipbccoin.newpool.pw", "http://ipbccoin.newpool.pw:8117"],
+        ["pool.ahka.net/ipbc", "http://ipbc.pool.ahka.net:8117"]
 ];
