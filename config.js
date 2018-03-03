@@ -18,5 +18,9 @@ var networkStat = [
         ["pool.ipbc.io", "https://pool.ipbc.io:8119"],
         ["support.ipbc.io", "https://support.ipbc.io:8119"],
         ["ipbccoin.newpool.pw", "http://ipbccoin.newpool.pw:8117"],
+        ["ipbc-pool.network", "https://ipbc-pool.network:8443"],
+        ["ipbc.fatpanda.club", "https://ipbc-pool.network/proxy/cryptonight"],
+        ["cryptoknight.cc/ipbc", "https://ipbc-pool.network/proxy/cryptoknight"],
+        ["ipbc-us.labbinarymining.com", "https://ipbc-pool.network/proxy/labbinarymining"],
         ["pool.ahka.net/ipbc", "http://ipbc.pool.ahka.net:8117"]
 ];
