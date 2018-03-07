@@ -4,7 +4,7 @@ var poolHost = "ipbc.pool.ahka.net";
 
 var blockExplorer = "https://explorer.ipbc.io/";
 
-var cryptonatorWidget = ["IPBC/USD", "IPBC/BTC"];
+var cryptonatorWidget = ["IPBC-USD", "IPBC-BTC", "BTC-USD"];
 
 var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
 
