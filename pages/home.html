@@ -418,7 +418,7 @@
         for (var i = 0; i < cryptonatorWidget.length; i++){
             (function(i){
                 cryptonatorWidget[i] = cryptonatorWidget[i].replace('{symbol}', lastStats.config.symbol.toLowerCase());
-                xhrMarketGets[cryptonatorWidget[i]] = $.get('https://api.livecoin.net/exchange/ticker?currencyPair=' + cryptonatorWidget[i], function(data){
+                xhrMarketGets[cryptonatorWidget[i]] = $.get('https://api.cryptonator.com/api/ticker/' + cryptonatorWidget[i], function(data){
                     if(data.error) {
                         return;
                     }
@@ -431,10 +431,10 @@
                     var $marketHeader = $('#marketHeader');
                     $('.marketTicker').remove();
                     for (var f = marketsData.length - 1; f >= 0 ; f--){
-                        var price = parseFloat(marketsData[f].ticker.last);
+                        var price = parseFloat(marketsData[f].ticker.price);
 
                         if (price > 1) price = Math.round(price * 100) / 100;
-                        else price = marketsData[f].ticker.last;
+                        else price = marketsData[f].ticker.price;
 
                         $marketHeader.after('<div class="marketTicker">' + marketsData[f].ticker.base + ': <span>' + price + ' ' + marketsData[f].ticker.target + '</span></div>');
                     }
